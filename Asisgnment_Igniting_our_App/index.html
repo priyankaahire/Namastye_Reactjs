@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Igniting our App</title>
+        <link rel="stylesheet"  href="index.css" />
+    </head>
+    <body>
+        <div id="root">Not Rendered</div>
+        <!-- Here type="module" is important otberwise after running the cmd 
+             npx parcel index.htm it will give error 
+            Browser scripts cannot have imports or exports.
+        Becaue they ar saying I don't know import / export then I need to tell them this is not normal js
+         file it is module file so we will add type="module"  -->
+        <script type="module" src="App.js"></script>
+    </body>
+</html>
